@@ -9,6 +9,7 @@ import {
 } from "motion/react";
 import { useRef } from "react";
 import { useHydrated } from "@/hooks/useHydrated";
+import { publicAsset } from "@/lib/public-asset";
 
 type HeroImageRevealProps = {
   transitionProgress: MotionValue<number>;
@@ -48,7 +49,7 @@ export function HeroImageReveal({
       >
         <Image
           className="hero-media-image hero-image-draft"
-          src="/events/speakup-rooftop-event.jpeg"
+          src={publicAsset("/events/speakup-rooftop-event.jpeg")}
           alt=""
           fill
           loading="eager"
@@ -59,7 +60,7 @@ export function HeroImageReveal({
         <div className="hero-image-reality">
           <Image
             className="hero-media-image"
-            src="/events/speakup-rooftop-event.jpeg"
+            src={publicAsset("/events/speakup-rooftop-event.jpeg")}
             alt=""
             fill
             loading="eager"

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { publicAsset } from "@/lib/public-asset";
 
 type HeaderTheme = "paper" | "ink" | "media";
 
@@ -27,7 +28,7 @@ export function AdaptiveWordmark({
     >
       <span className="adaptive-wordmark-layer adaptive-wordmark-dark">
         <Image
-          src="/brand/speakup-wordmark.png"
+          src={publicAsset("/brand/speakup-wordmark.png")}
           alt=""
           width={dimensions.width}
           height={dimensions.height}
@@ -37,7 +38,7 @@ export function AdaptiveWordmark({
       </span>
       <span className="adaptive-wordmark-layer adaptive-wordmark-light">
         <Image
-          src="/brand/speakup-wordmark-light.png"
+          src={publicAsset("/brand/speakup-wordmark-light.png")}
           alt=""
           width={dimensions.width}
           height={dimensions.height}

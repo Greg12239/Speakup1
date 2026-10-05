@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { publicAsset } from "@/lib/public-asset";
 
 type LogoVariant = "primary" | "wordmark";
 
@@ -11,12 +12,12 @@ type LogoProps = {
 
 const logoAssets = {
   primary: {
-    src: "/brand/speakup-primary.png",
+    src: publicAsset("/brand/speakup-primary.png"),
     width: 1250,
     height: 370,
   },
   wordmark: {
-    src: "/brand/speakup-wordmark.png",
+    src: publicAsset("/brand/speakup-wordmark.png"),
     width: 1250,
     height: 270,
   },
