@@ -1,0 +1,25 @@
+# Dependencies
+**/node_modules/
+
+# Next.js and generated builds
+**/.next/
+**/out/
+**/build/
+**/dist/
+**/.cache/
+**/.turbo/
+*.tsbuildinfo
+
+# Environment files and secrets
+.env*
+!.env.example
+*.pem
+*.key
+
+# Local temporary and backup artifacts
+**/.revert-backup-*/
+*.tmp
+*.temp
+*.log
+.DS_Store
+Thumbs.db
